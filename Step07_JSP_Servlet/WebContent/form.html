@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="formResult.jsp">
+		이름: <input type="text" name="name" value="이름을 입력하십슈"><br>
+		아이디 : <input type="text" name="id"><br>
+		패스워드 : <input type="password" name="password"><br>
+		나이 : <input type="number" name="age" min="0" max="150" step="1"><br>
+		이메일 : <input type="email" name="email"><br>
+		생일 : <input type="date" name="date"><br>
+		좋아하는 음식 딱 하나 : <br>
+		
+		<!--  radio 타입은 name이 같아야만 한 개만 선택되도록 자동 설정된다. -->
+		<input type="radio" name="food" value="라면" checked>라면
+		<input type="radio" name="food" value="떡볶이">떡볶이
+		<input type="radio" name="food" value="피자">피자
+		<input type="radio" name="food" value="스파게티">스파게티
+		<input type="radio" name="food" value="햄버거">햄버거
+		<br>
+		
+		<!-- checkbox는 다수 선택 가능 -->
+		그 외 좋아하는 음식 : <br>
+		<input type="checkbox" name = "food1" value="라면" checked>라면
+		<input type="checkbox" name="food1" value="떡볶이">떡볶이
+		<input type="checkbox" name="food1" value="피자">피자
+		<br>
+		
+		<!-- select는 한 개만 선택 가능 -->
+		가장 좋아하는 과목:
+		<select name="study">
+		<option value="java">자바</option>
+		<option value="sql">에스큐엘</option>
+		<option value="jsp">제이에스피</option>
+		</select>
+		<br>
+		
+		더 공푸하고픈 과목:
+		<select name="study1" multiple="multiple" size="5">
+		<option value="java">자바</option>
+		<option value="sql">에스큐엘</option>
+		<option value="jsp">제이에스피</option>
+		</select>
+		<br>
+		
+		소감 : <br>
+		<textarea rows="10" cols="50" name="sogam">미리 입력될 값</textarea>
+		<br>
+		
+		<input type="submit" value="Send">
+		<input type="reset" value="취소">
+		<input type="button" value="선택">
+		<button>버튼</button>
+		
+	</form>
+</body>
+</html>
